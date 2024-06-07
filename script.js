@@ -34,7 +34,7 @@ const addTask = () => {
     const deleteButtons = document.querySelectorAll(".delete");
     deleteButtons.forEach(button => {
         button.onclick = () => {
-            if(document.querySelector(".task-check").checked){
+            if(document.querySelectorAll(".task-check").checked){
                 taskCount -= 0;
             }else{
                 taskCount -= 1;
